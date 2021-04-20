@@ -3,9 +3,9 @@
 使用案例  
 
 
-
-   //Rxjava的一些使用
-   Subscribe.CreateSubScribe(new ControlCallBack<String>() {
+//Rxjava的一些使用
+   
+     Subscribe.CreateSubScribe(new ControlCallBack<String>() {
             @Override
             public void contorllCallBack(CallBack<String> callBack) {
                 System.out.println("----------------------------contorllCallBack-------------------------------------");
@@ -49,7 +49,7 @@
             }
         });
         //Rxbus的测试案例
-        CreateSubscribeBus createSubscribeBus = Subscribe.CreateSubscribeBus();
+    CreateSubscribeBus createSubscribeBus = Subscribe.CreateSubscribeBus();
         //同样可以设置线程
         createSubscribeBus.addSubscribeBean(Student.class).SubscribeIO().CallBackIO().setListeners(new Consumer<Student>() {
             @Override
